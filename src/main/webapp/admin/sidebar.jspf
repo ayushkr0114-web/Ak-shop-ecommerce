@@ -1,0 +1,79 @@
+<%
+    String activePage = (String) request.getAttribute("page");
+%>
+
+<aside class="admin-sidebar">
+
+    <div class="admin-logo">
+        <i class="bi bi-shop"></i>
+        <span>AK Shop</span>
+    </div>
+
+    <ul class="admin-menu">
+
+        <li>
+            <a href="home.jsp" class="<%= "home".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-speedometer2"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="products.jsp" class="<%= "products".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-box-seam"></i>
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="categories.jsp" class="<%= "categories".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-tags"></i>
+                Categories
+            </a>
+        </li>
+
+        <li>
+            <a href="orders.jsp" class="<%= "orders".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-cart-check"></i>
+                Orders
+            </a>
+        </li>
+
+        <li>
+            <a href="customers.jsp" class="<%= "customers".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-people"></i>
+                Customers
+            </a>
+        </li>
+
+        <li>
+            <a href="payments.jsp" class="<%= "payments".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-credit-card"></i>
+                Payments
+            </a>
+        </li>
+
+        <li>
+            <a href="reports.jsp" class="<%= "reports".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-bar-chart"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="change_password.jsp" class="<%= "changePassword".equals(activePage) ? "active" : "" %>">
+                <i class="bi bi-lock"></i>
+                Change Password
+            </a>
+        </li>
+
+        <li>
+            <a href="logout.jsp" class="logout-link">
+                <i class="bi bi-box-arrow-right"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
